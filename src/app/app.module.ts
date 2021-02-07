@@ -5,8 +5,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AddTodoComponentComponent } from './add-todo-component/add-todo-component.component';
 import { RouterModule} from '@angular/router'
-import { ROUTES } from './app-routing.module';
+import { ROUTES } from './app-routes.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MatToolbarModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -18,6 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
   BrowserModule,
     RouterModule.forRoot(ROUTES),
     BrowserAnimationsModule,
+    MatToolbarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
