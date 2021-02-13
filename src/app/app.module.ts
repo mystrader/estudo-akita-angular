@@ -7,8 +7,11 @@ import { AddTodoComponentComponent } from './add-todo-component/add-todo-compone
 import { RouterModule} from '@angular/router'
 import { ROUTES } from './app-routes.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatInputModule, MatProgressSpinnerModule, MatSpinner, MatToolbarModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -22,7 +25,12 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule.forRoot(ROUTES),
     BrowserAnimationsModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatInputModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
